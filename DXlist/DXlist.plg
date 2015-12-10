@@ -1,0 +1,173 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DXlist - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/DXlist.res" /d "NDEBUG" "C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\DXlist.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPF876.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/DXlist.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\Add_Delet.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\ADOconn.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\Delete.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\DXlist.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\DXlistDlg.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\GuiJi_chuzhang.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\GuiJi_kaxiaoshou.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\GuiJi_tongzhidan.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\GuiJi_wangjian.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\GuiJi_yucunzhuan.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\JiHe_CHECK.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\JiHe_chuzhang.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\JiHe_kaxiaoshou.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\JiHe_tongzhidan.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\JiHe_wangjian.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\JiHe_yucunzhuan.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\LogIn1.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\Luru_chuzhang.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\Luru_kaxiaoshou.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\LuRu_kxs_Add.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\LuRu_kxs_delet.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\Luru_tongzhiddan.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\LuRu_tzd_Add.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\LuRu_tzd_Delet.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\Luru_wangjian.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\LuRu_wj_Add.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\LuRu_wj_Delet.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\LuRu_ycz_Add.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\LuRu_ycz_Delete.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\Luru_yucunzhuan.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\Modify_psw.cpp"
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\User_Root.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPF876.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPF877.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/DXlist.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Administrator\Desktop\DXList\DXlistq\DXlist\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPF877.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPF878.tmp" with contents
+[
+/nologo /subsystem:windows /profile /machine:I386 /out:"Release/DXlist.exe" 
+.\Release\Add_Delet.obj
+.\Release\ADOconn.obj
+.\Release\Delete.obj
+.\Release\DXlist.obj
+.\Release\DXlistDlg.obj
+.\Release\GuiJi_chuzhang.obj
+.\Release\GuiJi_kaxiaoshou.obj
+.\Release\GuiJi_tongzhidan.obj
+.\Release\GuiJi_wangjian.obj
+.\Release\GuiJi_yucunzhuan.obj
+.\Release\JiHe_CHECK.obj
+.\Release\JiHe_chuzhang.obj
+.\Release\JiHe_kaxiaoshou.obj
+.\Release\JiHe_tongzhidan.obj
+.\Release\JiHe_wangjian.obj
+.\Release\JiHe_yucunzhuan.obj
+.\Release\LogIn1.obj
+.\Release\Luru_chuzhang.obj
+.\Release\Luru_kaxiaoshou.obj
+.\Release\LuRu_kxs_Add.obj
+.\Release\LuRu_kxs_delet.obj
+.\Release\Luru_tongzhiddan.obj
+.\Release\LuRu_tzd_Add.obj
+.\Release\LuRu_tzd_Delet.obj
+.\Release\Luru_wangjian.obj
+.\Release\LuRu_wj_Add.obj
+.\Release\LuRu_wj_Delet.obj
+.\Release\LuRu_ycz_Add.obj
+.\Release\LuRu_ycz_Delete.obj
+.\Release\Luru_yucunzhuan.obj
+.\Release\Modify_psw.obj
+.\Release\StdAfx.obj
+.\Release\User_Root.obj
+.\Release\DXlist.res
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPF878.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Add_Delet.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+ADOconn.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Delete.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+DXlist.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+DXlistDlg.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+GuiJi_chuzhang.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+GuiJi_kaxiaoshou.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+GuiJi_tongzhidan.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+GuiJi_wangjian.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+GuiJi_yucunzhuan.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+JiHe_CHECK.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+JiHe_chuzhang.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+JiHe_kaxiaoshou.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+JiHe_tongzhidan.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+JiHe_wangjian.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+JiHe_yucunzhuan.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+LogIn1.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Luru_chuzhang.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Luru_kaxiaoshou.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+LuRu_kxs_Add.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Generating Code...
+Compiling...
+LuRu_kxs_delet.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Luru_tongzhiddan.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+LuRu_tzd_Add.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+LuRu_tzd_Delet.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Luru_wangjian.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+LuRu_wj_Add.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+LuRu_wj_Delet.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+LuRu_ycz_Add.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+LuRu_ycz_Delete.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Luru_yucunzhuan.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Modify_psw.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+User_Root.cpp
+c:\users\administrator\desktop\dxlist\dxlistq\dxlist\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+DXlist.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

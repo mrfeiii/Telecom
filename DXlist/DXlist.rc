@@ -1,0 +1,1306 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中立国(系统默认) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LuRu_ycz_Delete DIALOG DISCARDABLE  0, 0, 258, 178
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除&修改"
+FONT 10, "System"
+BEGIN
+    CONTROL         "转账日期：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,33,26,38,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,76,24,53,13
+    COMBOBOX        IDC_COMBO1,76,42,51,83,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "销账城市：",IDC_STATIC,35,44,44,12
+    LTEXT           "产品名称：",IDC_STATIC,34,62,42,11
+    COMBOBOX        IDC_COMBO2,76,62,118,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "删除",IDC_BUTTON1,63,131,45,16
+    LTEXT           "销账类型：",IDC_STATIC,34,79,40,12
+    COMBOBOX        IDC_COMBO5,76,79,47,34,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "修改",IDC_BUTTON2,160,131,45,16
+    LTEXT           "销账金额：",IDC_STATIC,32,96,40,12
+    EDITTEXT        IDC_EDIT1,76,96,44,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_LuRu_ycz_Delete, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中立国(系统默认) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 电信报表系统"
+FONT 9, "宋体"
+BEGIN
+    ICON            128,IDC_STATIC,11,17,20,20
+    LTEXT           "电信报表系统 1.0 版",IDC_STATIC,39,15,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 大连民族学院 软件1023项目组 (C) 2012",
+                    IDC_STATIC,40,30,188,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_Main DIALOGEX 0, 0, 572, 391
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "电信报表系统"
+MENU IDR_MENU1
+FONT 9, "宋体"
+BEGIN
+END
+
+IDD_LuRu_chuzhang DIALOG DISCARDABLE  0, 0, 413, 325
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "出账录入"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "出账查询选择",IDC_STATIC,24,18,375,126
+    GROUPBOX        "所有记录",IDC_STATIC,23,150,376,157
+    CONTROL         "出账月份： 从",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,57,31,50,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,111,28,53,13
+    LTEXT           "到",IDC_STATIC,166,30,9,9
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,176,28,51,13
+    LTEXT           "(日期格式：YYYY-MM,起始日期小于结束日期)",IDC_STATIC,
+                    235,29,161,13
+    COMBOBOX        IDC_COMBO1,100,45,51,71,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "出账城市：",IDC_STATIC,56,46,44,12
+    LTEXT           "产品名称：",IDC_STATIC,54,61,42,11
+    COMBOBOX        IDC_COMBO2,100,61,118,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "出账收入类型：",IDC_STATIC,39,77,57,11
+    COMBOBOX        IDC_COMBO3,100,77,179,53,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "稽核状态：",IDC_STATIC,54,93,40,12
+    COMBOBOX        IDC_COMBO4,100,93,47,45,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "增加",IDC_BUTTON1,291,121,26,14
+    PUSHBUTTON      "查询",IDC_BUTTON2,337,121,26,13
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,35,173,346,126
+END
+
+IDD_LuRu_kaxiaoshou DIALOG DISCARDABLE  0, 0, 453, 315
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "卡销售录入"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "卡销售查询选择",IDC_STATIC,22,7,417,113
+    GROUPBOX        "所有记录",IDC_STATIC,21,129,418,170
+    CONTROL         "销售日期：从",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,51,20,49,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,102,18,53,13
+    LTEXT           "到",IDC_STATIC,157,20,9,9
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,167,18,51,13
+    LTEXT           "(日期格式：YYYY-MM-DD,起始日期小于结束日期)",IDC_STATIC,
+                    226,19,177,13
+    COMBOBOX        IDC_COMBO1,97,36,51,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "销售城市：",IDC_STATIC,53,38,44,12
+    LTEXT           "产品名称：",IDC_STATIC,52,56,42,11
+    COMBOBOX        IDC_COMBO2,97,56,118,46,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "稽核状态：",IDC_STATIC,51,73,42,12
+    COMBOBOX        IDC_COMBO4,97,73,47,33,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "增加",IDC_BUTTON1,309,96,36,14
+    PUSHBUTTON      "查询",IDC_BUTTON2,364,96,33,13
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,34,147,390,141
+END
+
+IDD_LuRu_wangjian DIALOG DISCARDABLE  0, 0, 426, 284
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "网间结算录入"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "网间结算查询选择",IDC_STATIC,8,7,404,126
+    GROUPBOX        "所有记录",IDC_STATIC,7,143,405,130
+    CONTROL         "结算月份：从",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,37,20,49,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,88,18,53,13
+    LTEXT           "到",IDC_STATIC,143,20,9,9
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,153,18,51,13
+    LTEXT           "(日期格式：YYYY-MM,起始日期小于结束日期)",IDC_STATIC,
+                    212,19,163,13
+    COMBOBOX        IDC_COMBO1,80,36,51,83,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "结算城市：",IDC_STATIC,39,38,44,12
+    LTEXT           "产品名称：",IDC_STATIC,38,56,42,11
+    COMBOBOX        IDC_COMBO2,80,56,118,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "结算运营商：",IDC_STATIC,30,73,48,11
+    COMBOBOX        IDC_COMBO3,80,73,75,49,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "稽核状态：",IDC_STATIC,38,106,42,12
+    COMBOBOX        IDC_COMBO4,79,106,47,31,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "增加",IDC_BUTTON1,294,111,36,14
+    PUSHBUTTON      "查询",IDC_BUTTON2,351,112,33,13
+    LTEXT           "结算类型：",IDC_STATIC,38,89,41,12
+    COMBOBOX        IDC_COMBO5,79,88,47,34,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,19,157,378,105
+END
+
+IDD_LuRu_yucunzhuan DIALOG DISCARDABLE  0, 0, 459, 335
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "预存转录入"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "预转存查询选择",IDC_STATIC,20,17,417,126
+    GROUPBOX        "所有记录",IDC_STATIC,19,149,418,173
+    CONTROL         "转账日期：从",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,49,30,49,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,100,28,53,13
+    LTEXT           "到",IDC_STATIC,155,30,9,9
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,165,28,51,13
+    LTEXT           "(日期格式：YYYY-MM,起始日期小于结束日期)",IDC_STATIC,
+                    224,29,163,13
+    COMBOBOX        IDC_COMBO1,95,46,51,79,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "销账城市：",IDC_STATIC,51,48,44,12
+    LTEXT           "产品名称：",IDC_STATIC,50,66,42,11
+    COMBOBOX        IDC_COMBO2,95,66,118,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "销账类型：",IDC_STATIC,48,81,40,11
+    COMBOBOX        IDC_COMBO3,95,81,164,48,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "稽核状态：",IDC_STATIC,49,97,42,12
+    COMBOBOX        IDC_COMBO4,94,96,47,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "增加",IDC_BUTTON1,306,121,36,14
+    PUSHBUTTON      "查询",IDC_BUTTON2,363,122,33,13
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,28,165,400,145
+END
+
+IDD_LuRu_tongzhidan DIALOG DISCARDABLE  0, 0, 437, 312
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "通知单录入"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "通知单查询选择",IDC_STATIC,19,19,398,143
+    GROUPBOX        "所有记录",IDC_STATIC,18,172,400,125
+    CONTROL         "收款日期：从",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,48,32,49,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,99,30,53,13
+    LTEXT           "到",IDC_STATIC,154,32,9,9
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,164,30,51,13
+    LTEXT           "(日期格式：YYYY-MM-DD,起始日期小于结束日期)",IDC_STATIC,
+                    223,31,179,13
+    COMBOBOX        IDC_COMBO1,94,48,51,73,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "城市名称：",IDC_STATIC,50,50,44,12
+    LTEXT           "产品名称：",IDC_STATIC,49,68,42,11
+    COMBOBOX        IDC_COMBO2,93,66,118,52,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "通知单类型：",IDC_STATIC,41,85,50,11
+    COMBOBOX        IDC_COMBO3,93,83,179,44,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "增加",IDC_BUTTON1,221,134,36,14
+    PUSHBUTTON      "查询",IDC_BUTTON2,281,135,33,13
+    LTEXT           "稽核状态：",IDC_STATIC,45,101,40,12
+    COMBOBOX        IDC_COMBO4,92,101,47,33,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,34,187,370,100
+END
+
+IDD_LogIn DIALOG DISCARDABLE  0, 0, 192, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登陆"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "登陆",IDOK,36,64,38,13
+    PUSHBUTTON      "退出",IDCANCEL,104,64,38,14
+    LTEXT           "用户名：",IDC_STATIC,33,20,32,13
+    EDITTEXT        IDC_EDIT_name,69,18,64,14,ES_AUTOHSCROLL
+    LTEXT           "密码：",IDC_STATIC,41,35,26,13
+    EDITTEXT        IDC_EDIT_pwd,69,36,64,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_Add_Delet DIALOGEX 0, 0, 315, 165
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加"
+FONT 10, "System"
+BEGIN
+    CONTROL         "出账月份：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,34,14,40,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,80,14,53,13
+    COMBOBOX        IDC_COMBO1,80,30,51,71,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "出账城市：",IDC_STATIC,34,31,44,12
+    LTEXT           "产品名称：",IDC_STATIC,34,47,42,11
+    COMBOBOX        IDC_COMBO2,80,46,118,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "出账收入类型：",IDC_STATIC,18,65,57,11
+    COMBOBOX        IDC_COMBO3,80,64,179,53,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "(日期格式：YYYY-MM,起始日期小于结束日期)",IDC_STATIC,
+                    136,15,161,13
+    LTEXT           "出账金额：",IDC_STATIC,33,82,42,12
+    PUSHBUTTON      "添加",IDC_BUTTON1,77,119,49,15,0,0,HIDC_BUTTON1
+    PUSHBUTTON      "取消",IDC_BUTTON2,178,120,49,15,0,0,HIDC_BUTTON2
+    EDITTEXT        IDC_EDIT1,80,81,50,15,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_Delet DIALOGEX 0, 0, 273, 155
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "产出&修改"
+FONT 10, "System"
+BEGIN
+    CONTROL         "出账月份：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,30,14,40,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,76,14,53,13
+    COMBOBOX        IDC_COMBO1,76,30,51,64,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES
+    LTEXT           "出账城市：",IDC_STATIC,30,31,44,12
+    LTEXT           "产品名称：",IDC_STATIC,30,47,42,11
+    COMBOBOX        IDC_COMBO2,76,46,118,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "出账收入类型：",IDC_STATIC,14,65,57,11
+    COMBOBOX        IDC_COMBO3,76,64,179,53,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "出账金额：",IDC_STATIC,21,82,48,12
+    EDITTEXT        IDC_EDIT1,76,80,44,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "删除",IDC_BUTTON1,62,112,55,17
+    PUSHBUTTON      "修改",IDC_BUTTON2,156,113,55,17
+END
+
+IDD_LuRu_kxs_Delet DIALOG DISCARDABLE  0, 0, 328, 190
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除&修改"
+FONT 10, "System"
+BEGIN
+    LTEXT           "卡销售日期：",IDC_STATIC,45,14,48,11
+    LTEXT           "城市名称：",IDC_STATIC,52,32,41,10
+    LTEXT           "产品名称：",IDC_STATIC,52,49,41,13
+    LTEXT           "单张面值金额：",IDC_STATIC,36,66,57,12
+    LTEXT           "卡数量：",IDC_STATIC,60,83,33,10
+    LTEXT           "卡总金额：",IDC_STATIC,53,101,40,12
+    LTEXT           "折扣后金额：",IDC_STATIC,44,121,49,10
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,93,13,54,13
+    COMBOBOX        IDC_COMBO1,93,32,61,13,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,93,49,190,13,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,93,65,59,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT2,93,82,59,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,93,99,59,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT4,93,121,58,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "删除",IDC_BUTTON1,78,148,44,17
+    PUSHBUTTON      "修改",IDC_BUTTON2,196,151,46,17
+END
+
+IDD_LuRu_kxs_Add DIALOG DISCARDABLE  0, 0, 292, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加"
+FONT 10, "System"
+BEGIN
+    LTEXT           "卡销售日期：",IDC_STATIC,32,16,48,11
+    LTEXT           "城市名称：",IDC_STATIC,39,34,41,10
+    LTEXT           "产品名称：",IDC_STATIC,39,51,41,13
+    LTEXT           "单张面值金额：",IDC_STATIC,23,68,57,12
+    LTEXT           "卡数量：",IDC_STATIC,47,85,33,10
+    LTEXT           "卡总金额：",IDC_STATIC,40,103,40,12
+    LTEXT           "折扣后金额：",IDC_STATIC,31,123,49,10
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,80,15,54,13
+    COMBOBOX        IDC_COMBO1,80,34,61,13,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,80,51,190,13,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,80,67,59,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT2,80,84,59,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,80,101,59,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT4,80,123,58,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "添加",IDC_BUTTON1,69,154,44,17
+    PUSHBUTTON      "取消",IDC_BUTTON2,163,154,46,17
+END
+
+IDD_LuRu_tzd_Add DIALOG DISCARDABLE  0, 0, 269, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加"
+FONT 10, "System"
+BEGIN
+    CONTROL         "收款日期：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,25,25,40,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,72,24,50,12
+    COMBOBOX        IDC_COMBO1,71,41,51,73,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "城市名称：",IDC_STATIC,27,43,44,12
+    LTEXT           "产品名称：",IDC_STATIC,26,60,42,11
+    COMBOBOX        IDC_COMBO2,71,59,118,52,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "通知单类型：",IDC_STATIC,18,78,50,11
+    COMBOBOX        IDC_COMBO3,71,77,179,44,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "通知单金额：",IDC_STATIC,18,94,52,12
+    EDITTEXT        IDC_EDIT1,71,94,44,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON1,49,130,44,17
+    PUSHBUTTON      "取消",IDC_BUTTON2,167,133,46,17
+END
+
+IDD_LuRu_tzd_Delete DIALOG DISCARDABLE  0, 0, 290, 174
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除&修改"
+FONT 10, "System"
+BEGIN
+    CONTROL         "收款日期：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,34,22,40,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,81,21,50,12
+    COMBOBOX        IDC_COMBO1,80,38,51,73,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "城市名称：",IDC_STATIC,36,40,44,12
+    LTEXT           "产品名称：",IDC_STATIC,35,57,42,11
+    COMBOBOX        IDC_COMBO2,80,56,118,52,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "通知单类型：",IDC_STATIC,27,75,50,11
+    COMBOBOX        IDC_COMBO3,80,74,179,44,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "通知单金额：",IDC_STATIC,27,91,52,12
+    EDITTEXT        IDC_EDIT1,79,91,44,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "删除",IDC_BUTTON1,58,127,44,17
+    PUSHBUTTON      "修改",IDC_BUTTON2,176,130,46,17
+END
+
+IDD_LuRu_wj_Add DIALOG DISCARDABLE  0, 0, 318, 179
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加"
+FONT 10, "System"
+BEGIN
+    CONTROL         "结算月份：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,33,26,38,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,76,24,53,13
+    LTEXT           "(日期格式：YYYY-MM,起始日期小于结束日期)",IDC_STATIC,
+                    135,25,163,13
+    COMBOBOX        IDC_COMBO1,76,42,51,83,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "结算城市：",IDC_STATIC,35,44,44,12
+    LTEXT           "产品名称：",IDC_STATIC,34,62,42,11
+    COMBOBOX        IDC_COMBO2,76,62,118,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "结算运营商：",IDC_STATIC,26,79,48,11
+    COMBOBOX        IDC_COMBO3,76,79,75,49,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加",IDC_BUTTON1,80,139,45,16
+    LTEXT           "结算类型：",IDC_STATIC,34,95,41,12
+    COMBOBOX        IDC_COMBO5,75,94,47,34,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "取消",IDC_BUTTON2,189,139,45,16
+    LTEXT           "结算金额：",IDC_STATIC,33,113,40,12
+    EDITTEXT        IDC_EDIT1,75,112,44,14,ES_AUTOHSCROLL
+END
+
+IDD_LuRu_wj_Delete DIALOG DISCARDABLE  0, 0, 317, 177
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除&修改"
+FONT 10, "System"
+BEGIN
+    CONTROL         "结算月份：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,33,26,38,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,76,24,53,13
+    LTEXT           "(日期格式：YYYY-MM,起始日期小于结束日期)",IDC_STATIC,
+                    135,25,163,13
+    COMBOBOX        IDC_COMBO1,76,42,51,83,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "结算城市：",IDC_STATIC,35,44,44,12
+    LTEXT           "产品名称：",IDC_STATIC,34,62,42,11
+    COMBOBOX        IDC_COMBO2,76,62,118,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "结算运营商：",IDC_STATIC,26,79,48,11
+    COMBOBOX        IDC_COMBO3,76,79,75,49,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "删除",IDC_BUTTON1,80,139,45,16
+    LTEXT           "结算类型：",IDC_STATIC,34,95,41,12
+    COMBOBOX        IDC_COMBO5,75,94,47,34,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "修改",IDC_BUTTON2,170,139,45,16
+    LTEXT           "结算金额：",IDC_STATIC,33,113,40,12
+    EDITTEXT        IDC_EDIT1,75,112,44,14,ES_AUTOHSCROLL
+END
+
+IDD_LuRu_ycz_Add DIALOG DISCARDABLE  0, 0, 245, 174
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加"
+FONT 10, "System"
+BEGIN
+    CONTROL         "转账日期：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,33,26,38,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,76,24,53,13
+    COMBOBOX        IDC_COMBO1,76,42,51,83,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "销账城市：",IDC_STATIC,35,44,44,12
+    LTEXT           "产品名称：",IDC_STATIC,34,62,42,11
+    COMBOBOX        IDC_COMBO2,76,62,118,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "增加",IDC_BUTTON1,36,131,45,16
+    LTEXT           "销账类型：",IDC_STATIC,34,79,40,12
+    COMBOBOX        IDC_COMBO5,76,79,47,34,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "取消",IDC_BUTTON2,140,133,45,16
+    LTEXT           "销账金额：",IDC_STATIC,32,96,40,12
+    EDITTEXT        IDC_EDIT1,76,96,44,14,ES_AUTOHSCROLL
+END
+
+IDD_JiHe_chuzhang DIALOG DISCARDABLE  0, 0, 396, 310
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "出账稽核"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "出账查询选择",IDC_STATIC,8,7,372,126
+    GROUPBOX        "所有记录",IDC_STATIC,7,139,373,157
+    CONTROL         "出账月份： 从",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,41,20,50,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,95,17,53,13
+    LTEXT           "到",IDC_STATIC,150,19,9,9
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,160,17,51,13
+    LTEXT           "(日期格式：YYYY-MM,起始日期小于结束日期)",IDC_STATIC,
+                    219,18,161,13
+    COMBOBOX        IDC_COMBO1,84,34,51,71,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "出账城市：",IDC_STATIC,40,35,44,12
+    LTEXT           "产品名称：",IDC_STATIC,38,50,42,11
+    COMBOBOX        IDC_COMBO2,84,50,118,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "出账收入类型：",IDC_STATIC,23,66,57,11
+    COMBOBOX        IDC_COMBO3,84,66,179,53,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "稽核状态：",IDC_STATIC,38,82,40,12
+    COMBOBOX        IDC_COMBO4,84,82,47,45,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询",IDC_BUTTON1,291,107,26,13
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,19,162,346,126
+END
+
+IDD_Root DIALOG DISCARDABLE  0, 0, 200, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加用户"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,78,21,58,12,ES_AUTOHSCROLL
+    LTEXT           "用户名：",IDC_STATIC,41,21,33,9
+    EDITTEXT        IDC_EDIT5,77,37,59,12,ES_AUTOHSCROLL
+    LTEXT           "密码：",IDC_STATIC,49,38,24,10
+    LTEXT           "类型:",IDC_STATIC,49,56,21,9
+    COMBOBOX        IDC_COMBO1,77,55,59,12,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加",IDC_BUTTON1,36,85,37,16
+    PUSHBUTTON      "取消",IDC_BUTTON2,117,87,37,16
+END
+
+IDD_CHECK DIALOG DISCARDABLE  0, 0, 151, 48
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "稽核通过",IDC_BUTTON1,23,14,43,16
+    PUSHBUTTON      "稽核失败",IDC_BUTTON2,87,15,43,15
+END
+
+IDD_JiHe_kaxiaoshou DIALOG DISCARDABLE  0, 0, 454, 313
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "卡销售稽核"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "卡销售查询选择",IDC_STATIC,18,14,417,113
+    GROUPBOX        "所有记录",IDC_STATIC,17,136,418,170
+    CONTROL         "销售日期：从",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,47,27,49,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,98,25,53,13
+    LTEXT           "到",IDC_STATIC,153,27,9,9
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,163,25,51,13
+    LTEXT           "(日期格式：YYYY-MM-DD,起始日期小于结束日期)",IDC_STATIC,
+                    222,26,177,13
+    COMBOBOX        IDC_COMBO1,93,43,51,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "销售城市：",IDC_STATIC,49,45,44,12
+    LTEXT           "产品名称：",IDC_STATIC,48,63,42,11
+    COMBOBOX        IDC_COMBO2,93,63,118,46,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "稽核状态：",IDC_STATIC,47,80,42,12
+    COMBOBOX        IDC_COMBO4,93,80,47,33,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询",IDC_BUTTON2,331,103,33,13
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,30,154,390,141
+END
+
+IDD_JiHe_tongzhidan DIALOG DISCARDABLE  0, 0, 429, 303
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "通知单稽核"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "通知单查询选择",IDC_STATIC,16,15,398,143
+    GROUPBOX        "所有记录",IDC_STATIC,15,168,400,125
+    CONTROL         "收款日期：从",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,45,28,49,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,96,26,53,13
+    LTEXT           "到",IDC_STATIC,151,28,9,9
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,161,26,51,13
+    LTEXT           "(日期格式：YYYY-MM-DD,起始日期小于结束日期)",IDC_STATIC,
+                    220,27,179,13
+    COMBOBOX        IDC_COMBO1,91,44,51,73,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "城市名称：",IDC_STATIC,47,46,44,12
+    LTEXT           "产品名称：",IDC_STATIC,46,64,42,11
+    COMBOBOX        IDC_COMBO2,90,62,118,52,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "通知单类型：",IDC_STATIC,38,81,50,11
+    COMBOBOX        IDC_COMBO3,90,79,179,44,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询",IDC_BUTTON2,278,131,33,13
+    LTEXT           "稽核状态：",IDC_STATIC,42,97,40,12
+    COMBOBOX        IDC_COMBO4,89,97,47,33,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,31,183,370,100
+END
+
+IDD_GuiJi_chuzhang DIALOG DISCARDABLE  0, 0, 390, 292
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "出账归集"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "出账查询选择",IDC_STATIC,8,7,372,114
+    GROUPBOX        "所有记录",IDC_STATIC,7,129,373,153
+    CONTROL         "出账月份： 从",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,41,20,50,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,95,17,53,13
+    LTEXT           "到",IDC_STATIC,150,19,9,9
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,160,17,51,13
+    LTEXT           "(日期格式：YYYY-MM,起始日期小于结束日期)",IDC_STATIC,
+                    219,18,161,13
+    COMBOBOX        IDC_COMBO1,84,34,51,71,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "出账城市：",IDC_STATIC,40,35,44,12
+    LTEXT           "产品名称：",IDC_STATIC,38,50,42,11
+    COMBOBOX        IDC_COMBO2,84,50,118,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "出账收入类型：",IDC_STATIC,23,66,57,11
+    COMBOBOX        IDC_COMBO3,84,66,179,53,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询",IDC_BUTTON1,203,92,33,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,19,143,346,130
+    PUSHBUTTON      "导出为Excel",IDC_BUTTON2,250,92,48,14
+    PUSHBUTTON      "导出为TXT",IDC_BUTTON3,314,92,45,14
+END
+
+IDD_JiHe_wangjian DIALOG DISCARDABLE  0, 0, 419, 276
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "网间结算稽核"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "网间结算查询选择",IDC_STATIC,7,7,404,126
+    GROUPBOX        "所有记录",IDC_STATIC,7,139,405,130
+    CONTROL         "结算月份：从",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,36,20,49,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,87,18,53,13
+    LTEXT           "到",IDC_STATIC,142,20,9,9
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,152,18,51,13
+    LTEXT           "(日期格式：YYYY-MM,起始日期小于结束日期)",IDC_STATIC,
+                    211,19,163,13
+    COMBOBOX        IDC_COMBO1,79,36,51,83,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "结算城市：",IDC_STATIC,38,38,44,12
+    LTEXT           "产品名称：",IDC_STATIC,37,56,42,11
+    COMBOBOX        IDC_COMBO2,79,56,118,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "结算运营商：",IDC_STATIC,29,73,48,11
+    COMBOBOX        IDC_COMBO3,79,73,75,49,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "稽核状态：",IDC_STATIC,37,106,42,12
+    COMBOBOX        IDC_COMBO5,78,106,47,31,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询",IDC_BUTTON2,314,112,33,13
+    LTEXT           "结算类型：",IDC_STATIC,37,89,41,12
+    COMBOBOX        IDC_COMBO4,78,88,47,34,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,19,153,378,105
+END
+
+IDD_JiHe_yucunzhuan DIALOG DISCARDABLE  0, 0, 432, 319
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "预存转稽核"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "预转存查询选择",IDC_STATIC,8,7,417,126
+    GROUPBOX        "所有记录",IDC_STATIC,7,139,418,173
+    CONTROL         "转账日期：从",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,37,20,49,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,88,18,53,13
+    LTEXT           "到",IDC_STATIC,143,20,9,9
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,153,18,51,13
+    LTEXT           "(日期格式：YYYY-MM,起始日期小于结束日期)",IDC_STATIC,
+                    212,19,163,13
+    COMBOBOX        IDC_COMBO1,83,36,51,79,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "销账城市：",IDC_STATIC,39,38,44,12
+    LTEXT           "产品名称：",IDC_STATIC,38,56,42,11
+    COMBOBOX        IDC_COMBO2,83,56,118,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "销账类型：",IDC_STATIC,36,71,40,11
+    COMBOBOX        IDC_COMBO3,83,71,164,48,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "稽核状态：",IDC_STATIC,37,87,42,12
+    COMBOBOX        IDC_COMBO4,82,86,47,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询",IDC_BUTTON2,300,110,33,13
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,16,155,400,145
+END
+
+IDD_GuiJi_kaxiaoshou DIALOG DISCARDABLE  0, 0, 435, 310
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "卡销售归集"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "卡销售查询选择",IDC_STATIC,11,7,417,113
+    GROUPBOX        "所有记录",IDC_STATIC,7,133,421,170
+    CONTROL         "销售日期：从",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,37,20,49,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,88,18,53,13
+    LTEXT           "到",IDC_STATIC,143,20,9,9
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,153,18,51,13
+    LTEXT           "(日期格式：YYYY-MM-DD,起始日期小于结束日期)",IDC_STATIC,
+                    212,19,177,13
+    COMBOBOX        IDC_COMBO1,83,36,51,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "销售城市：",IDC_STATIC,39,38,44,12
+    LTEXT           "产品名称：",IDC_STATIC,38,56,42,11
+    COMBOBOX        IDC_COMBO2,83,56,118,46,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询",IDC_BUTTON2,225,93,33,13
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,20,147,390,141
+    PUSHBUTTON      "导出为Excel",IDC_BUTTON3,269,92,48,14
+    PUSHBUTTON      "导出为TXT",IDC_BUTTON4,333,92,45,14
+END
+
+IDD_GuiJi_tongzhidan DIALOG DISCARDABLE  0, 0, 430, 308
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "通知单归集"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "通知单查询选择",IDC_STATIC,16,15,398,126
+    GROUPBOX        "所有记录",IDC_STATIC,15,147,400,146
+    CONTROL         "收款日期：从",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,45,28,49,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,96,26,53,13
+    LTEXT           "到",IDC_STATIC,151,28,9,9
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,161,26,51,13
+    LTEXT           "(日期格式：YYYY-MM-DD,起始日期小于结束日期)",IDC_STATIC,
+                    220,27,179,13
+    COMBOBOX        IDC_COMBO1,91,44,51,73,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "城市名称：",IDC_STATIC,47,46,44,12
+    LTEXT           "产品名称：",IDC_STATIC,46,64,42,11
+    COMBOBOX        IDC_COMBO2,90,62,118,52,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "通知单类型：",IDC_STATIC,38,81,50,11
+    COMBOBOX        IDC_COMBO3,90,79,179,44,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,31,163,370,120
+    PUSHBUTTON      "查询",IDC_BUTTON3,228,109,33,13
+    PUSHBUTTON      "导出为Excel",IDC_BUTTON4,272,108,48,14
+    PUSHBUTTON      "导出为TXT",IDC_BUTTON5,336,108,45,14
+END
+
+IDD_GuiJi_wangjian DIALOG DISCARDABLE  0, 0, 433, 287
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "网间归集"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "网间结算查询选择",IDC_STATIC,14,13,404,126
+    GROUPBOX        "所有记录",IDC_STATIC,14,145,405,130
+    CONTROL         "结算月份：从",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,43,26,49,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,94,24,53,13
+    LTEXT           "到",IDC_STATIC,149,26,9,9
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,159,24,51,13
+    LTEXT           "(日期格式：YYYY-MM,起始日期小于结束日期)",IDC_STATIC,
+                    218,25,163,13
+    COMBOBOX        IDC_COMBO1,86,42,51,83,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "结算城市：",IDC_STATIC,45,44,44,12
+    LTEXT           "产品名称：",IDC_STATIC,44,62,42,11
+    COMBOBOX        IDC_COMBO2,86,62,118,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "结算运营商：",IDC_STATIC,36,79,48,11
+    COMBOBOX        IDC_COMBO3,86,79,75,49,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "结算类型：",IDC_STATIC,44,95,41,12
+    COMBOBOX        IDC_COMBO4,85,94,47,34,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,26,159,378,105
+    PUSHBUTTON      "查询",IDC_BUTTON3,228,109,33,13
+    PUSHBUTTON      "导出为Excel",IDC_BUTTON4,272,108,48,14
+    PUSHBUTTON      "导出为TXT",IDC_BUTTON5,337,108,45,14
+END
+
+IDD_GuiJi_yucunzhuan DIALOG DISCARDABLE  0, 0, 448, 338
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "预存转归集"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "预转存查询选择",IDC_STATIC,15,17,417,126
+    GROUPBOX        "所有记录",IDC_STATIC,14,149,418,173
+    CONTROL         "转账日期：从",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,44,30,49,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,95,28,53,13
+    LTEXT           "到",IDC_STATIC,150,30,9,9
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,160,28,51,13
+    LTEXT           "(日期格式：YYYY-MM,起始日期小于结束日期)",IDC_STATIC,
+                    219,29,163,13
+    COMBOBOX        IDC_COMBO1,90,46,51,79,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "销账城市：",IDC_STATIC,46,48,44,12
+    LTEXT           "产品名称：",IDC_STATIC,45,66,42,11
+    COMBOBOX        IDC_COMBO2,90,66,118,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "销账类型：",IDC_STATIC,43,81,40,11
+    COMBOBOX        IDC_COMBO3,90,81,164,48,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,23,165,400,145
+    PUSHBUTTON      "查询",IDC_BUTTON3,228,111,33,13
+    PUSHBUTTON      "导出为Excel",IDC_BUTTON4,272,110,48,14
+    PUSHBUTTON      "导出为TXT",IDC_BUTTON5,337,110,45,14
+END
+
+IDD_Modify_psw DIALOG DISCARDABLE  0, 0, 214, 153
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    LTEXT           "请输入旧密码：",IDC_STATIC,29,22,60,11
+    LTEXT           "请输入新密码：",IDC_STATIC,29,43,56,11
+    LTEXT           "请再次输入新密码：",IDC_STATIC,15,68,72,12
+    EDITTEXT        IDC_EDIT1,90,22,81,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,89,44,81,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,89,66,81,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_BUTTON1,40,109,47,13
+    PUSHBUTTON      "取消",IDC_BUTTON2,116,109,47,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_Main, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 565
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 384
+    END
+
+    IDD_LuRu_chuzhang, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 406
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 318
+    END
+
+    IDD_LuRu_kaxiaoshou, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 446
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 308
+    END
+
+    IDD_LuRu_wangjian, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 419
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 277
+    END
+
+    IDD_LuRu_yucunzhuan, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 452
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 328
+    END
+
+    IDD_LuRu_tongzhidan, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 430
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 305
+    END
+
+    IDD_LogIn, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_Add_Delet, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_Delet, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_LuRu_kxs_Delet, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 321
+        VERTGUIDE, 93
+        VERTGUIDE, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_LuRu_kxs_Add, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_LuRu_tzd_Add, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_LuRu_tzd_Delete, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_LuRu_wj_Add, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 311
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_LuRu_wj_Delete, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 139
+    END
+
+    IDD_LuRu_ycz_Add, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_JiHe_chuzhang, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 389
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 303
+        HORZGUIDE, 120
+    END
+
+    IDD_Root, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_CHECK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        HORZGUIDE, 30
+        HORZGUIDE, 40
+    END
+
+    IDD_JiHe_kaxiaoshou, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 447
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 306
+    END
+
+    IDD_JiHe_tongzhidan, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 422
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 296
+    END
+
+    IDD_JiHe_wangjian, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 269
+    END
+
+    IDD_JiHe_yucunzhuan, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 425
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 312
+    END
+
+    IDD_GuiJi_kaxiaoshou, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 428
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 303
+        HORZGUIDE, 106
+    END
+
+    IDD_GuiJi_tongzhidan, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 423
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 301
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DXlist.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DXlist Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "DXlist\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DXlist.EXE\0"
+            VALUE "ProductName", "DXlist 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      MOVEABLE PURE   "res\\Master.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "手工录入"
+    BEGIN
+        MENUITEM "出账收入录入",                ID_MEN_LRchuzhang
+        MENUITEM "卡销售录入",                  ID_MENU_LRkaxiaoshou
+        MENUITEM "网间结算录入",                ID_MENU_LRwangjian
+        MENUITEM "预存转录入",                  ID_MENU_LRyucunzhuan
+        MENUITEM "通知单录入",                  ID_MENU_LRtongzhidan
+    END
+    POPUP "收款稽核"
+    BEGIN
+        MENUITEM "出账收入稽核",                ID_MENU_JHchuzhang
+        MENUITEM "卡销售收入稽核",              ID_MENU_JHkaxiaoshou
+        MENUITEM "网间结算稽核",                ID_MENU_JHwangjian
+        MENUITEM "预存收入稽核",                ID_MENU_JHyucun
+        MENUITEM "通知单收入稽核",              ID_MENU_JHtongzhidan
+    END
+    POPUP "数据归集"
+    BEGIN
+        MENUITEM "出账收入归集",                ID_MENU_GJchuzhang
+        MENUITEM "卡销售收入归集",              ID_MENU_GJkaxiaoshou
+        MENUITEM "网间结算归集",                ID_MENU_GJwangjian
+        MENUITEM "预存转归集",                  ID_MENU_GJyucunzhuan
+        MENUITEM "通知单归集",                  ID_MENU_GJtongzhidan
+    END
+    POPUP "账户管理"
+    BEGIN
+        MENUITEM "用户-修改密码",               ID_Modify_psw
+        MENUITEM SEPARATOR
+        MENUITEM "管理员-创建新用户",           ID_Creat_newuser
+    END
+    MENUITEM "退出登录",                    ID_LogOut
+    MENUITEM "关于",                        ID_MEN_About
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "res\\16cd940057e70bc756118232bee45247.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 DXlist(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\DXlist.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
